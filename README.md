@@ -2,14 +2,14 @@
 
 # Project Name
 
-> Description the project.
+> This is my first project with microverse,in this project i created a portifolio skeleton for mobile view,
 
+![screenshot](./images/skeleton.png)
+#
+# Built With
 
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
+>HTML
+>css
 
 ## Live Demo (if available)
 
@@ -17,13 +17,6 @@
 
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
 ### Setup
@@ -42,21 +35,15 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/misheck12)
+- Twitter: [@twitterhandle](https://twitter.com/MisheckLivingi2)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/misheck-livingi-a0b536142/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+feel free to reach me on any of the above social links.
 
 ## Show your support
 
@@ -64,9 +51,6 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
