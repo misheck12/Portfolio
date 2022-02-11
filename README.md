@@ -2,9 +2,9 @@
 
 # Project Name
 
-> This is my first project with microverse,in this project i created a portifolio skeleton for mobile view,
+> This is my upgrade project from the previous skeleton ,in this project i have added section like about me and skills.
 
-![screenshot](./images/skeleton.png)
+![screenshot](./images/mobileportfolio.png)
 #
 # Built With
 
