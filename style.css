@@ -143,11 +143,6 @@ body {
   content: none;
 }
 
-.language1 ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .langu {
   background-color: #ebebff;
   padding: 5px 15px;
@@ -156,6 +151,7 @@ body {
   font-weight: 500;
   font-family: poppins, sans-serif;
   display: inline-block;
+  margin: 0 4px;
 }
 
 .option {
