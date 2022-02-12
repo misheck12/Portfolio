@@ -143,15 +143,19 @@ body {
   content: none;
 }
 
+.language1 ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .langu {
   background-color: #ebebff;
-  padding: 5px 25px;
+  padding: 5px 15px;
   color: #4472e7;
   border-radius: 10px;
   font-weight: 500;
   font-family: poppins, sans-serif;
   display: inline-block;
-  margin-right: 20px;
 }
 
 .option {
@@ -193,14 +197,19 @@ p {
 
 button {
   border: 2px solid #4472e7d2;
-  padding: 13px 8px;
+  height: 48px;
+  padding: 0 12px;
   color: #4472e7;
   text-decoration: none;
   border-radius: 8px;
   font-size: 22px;
   font-family: Poppins, sans-serif;
   font-weight: 500;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
   background-color: #fff;
+  line-height: 34px;
 }
 
 .btn-one {
