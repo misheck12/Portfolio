@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #e5e5e5;
+  background-color: #f7f7f9;
 }
 
 .colour {
@@ -94,7 +94,6 @@ body {
   background-color: #fff;
   margin-bottom: 50px;
   padding-top: 50px;
-  border: 1px solid white;
   border-bottom-left-radius: 110px;
 }
 
@@ -112,8 +111,9 @@ body {
   flex-direction: column;
   background: #fff;
   padding: 16px;
-  margin: 16px;
   border-radius: 16px;
+  margin: 24px;
+  border: 1px solid #dfe1e6;
 }
 
 .project-card img {
@@ -181,7 +181,7 @@ body {
   margin-right: 12px;
 }
 
-p {
+.default-p {
   position: static;
   width: 327px;
   height: auto;
@@ -190,7 +190,6 @@ p {
   color: #344563;
   order: 1;
   margin: 12px 0;
-  margin-left: 29px;
 }
 
 button {
@@ -385,6 +384,7 @@ a .btn-two {
   justify-content: center;
   text-align: center;
   font-weight: normal;
+  margin: 24px;
 }
 
 .con-form {
