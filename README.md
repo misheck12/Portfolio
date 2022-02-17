@@ -2,7 +2,8 @@
 
 # My Portfolio Project By Misheck Livingi
 
-> This is a simple web develoment project for microverse created using simple HTML(Hyper text mark-up Language.) and CSS(Cascading Style Sheet) which is used for styling or decorating the webpage.
+> This project was designed using HTML and CSS which is used for styling or decorating the webpage.
+
 # DESKTOP VERSION
 ![screenshot](./images/Desktop.png)
 
