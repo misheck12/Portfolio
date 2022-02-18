@@ -405,6 +405,7 @@ a .btn-two {
   font-size: 17px;
   font-weight: 500;
   color: #4472e7;
+  transition: all 0.5s ease-out;
 }
 
 .skills-section {
