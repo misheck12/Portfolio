@@ -28,7 +28,7 @@ Here is my repository link: https://Misheck12.github.io/Portfolio/
 
 👤 **Misheck Livingi**
 
-- GitHub: [@githubhandle](https://github.com/misheck12)
+- GitHub: [@githubhandle](https://misheck12.github.io/Portfolio/)
 
 ## 🤝 Contributing
 
