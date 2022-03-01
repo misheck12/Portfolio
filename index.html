@@ -21,8 +21,8 @@
 <body>
   <header class="nav-head">
     <a class="logo" href="#">My logo</a>
-    <nav class="nav-bar">
-      <a class="bars" href="#"><img src="images/menu.png" alt="menu navbar"></a>
+    <nav class="nav-bar" >
+      <a class="bars" onclick="menuFunction()"href="#"><img src="images/menu.png" alt="menu navbar"></a>
     </nav>
       <nav class="menu-desktop">
         <ul>
@@ -32,6 +32,17 @@
         </ul>
     </nav>
   </header>
+
+  <nav id="mobile-menu-container">
+    <span class="close active-close">&times;</span>
+    <ul>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#about-myself">About</a></li>
+      <li><a href="#contacts">Contact</a></li>
+    </ul>
+    <div class="back-blur"></div>
+</nav>
+
   <main>
     <section class="first-section">
       <div class="text">
@@ -274,5 +285,5 @@
     </div>
   </section>
   </main>
-
+    <script src="./data.js" ></script>
 </body>
