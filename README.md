@@ -2,7 +2,7 @@
 
 # My Portfolio Project By Misheck Livingi
 
-> This project was designed using HTML and CSS which is used for styling or decorating the webpage.
+> This project was designed using HTML,javaScript and CSS which is used for styling or decorating the webpage.
 
 # DESKTOP VERSION
 ![screenshot](./images/Desktop.png)
@@ -14,6 +14,7 @@ In this project I added an about me then lastly I added a contact me form.
 
 - Html
 - CSS
+-javaScript
 
 **Instructions on how to access my project locally.**
  To Access my project locally please follow the following instructions;
@@ -51,3 +52,7 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
+## COLLABORATORS
+- Dan Ushindi
+- Ali
