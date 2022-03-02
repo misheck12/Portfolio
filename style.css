@@ -76,7 +76,7 @@ body.noscroll {
   margin-left: auto;
   position: absolute;
   top: 4rem;
-  right: 1rem;
+  right: 2rem;
   z-index: 8;
 }
 
@@ -94,6 +94,8 @@ body.noscroll {
 
 .show-modal {
   visibility: visible;
+  position: fixed;
+  overflow-y: auto;
 }
 
 .modal-inner {
