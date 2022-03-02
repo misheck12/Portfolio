@@ -21,6 +21,9 @@ In this project I added an about me then lastly I added a contact me form.
 2. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side.
 3. Select download Zip option from drop down menu.
 4. Once the download is complete you will be able to access my project locally.
+
+## live Demo section
+
 Here is my repository link: https://Misheck12.github.io/Portfolio/
 
 
