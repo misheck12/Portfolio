@@ -94,6 +94,8 @@ body.noscroll {
 
 .show-modal {
   visibility: visible;
+  position: fixed;
+  overflow-y: auto;
 }
 
 .modal-inner {
@@ -207,11 +209,11 @@ body.noscroll {
   background-color: #fff;
 }
 
-.social-media {
+.icons-media {
   padding-bottom: 100px;
 }
 
-.social-media li {
+.icons-media li {
   display: inline-block;
   margin-right: 20px;
   margin-top: 25px;
@@ -225,7 +227,7 @@ body.noscroll {
   font-size: small;
 }
 
-.social-media li a {
+.icons-media li a {
   cursor: pointer;
   text-decoration: none;
 }
