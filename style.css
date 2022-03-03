@@ -16,7 +16,155 @@ body {
   background-color: #e5e5e5;
 }
 
-.nav-head {
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(78, 78, 243, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  transform: translate(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.show-side-bar {
+  transform: translate(0);
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 85px;
+}
+
+.anchor-link {
+  margin-left: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-family: poppins, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 44px;
+  margin-bottom: 1rem;
+}
+
+.cancel-styling {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 85%;
+  margin-top: 15px;
+  color: #fff;
+}
+
+body.noscroll {
+  overflow: hidden;
+  position: fixed;
+}
+
+.cancels {
+  border: none;
+  background: transparent;
+  outline: none;
+  color: #67798e;
+  font-size: 2rem;
+  margin-left: auto;
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 8;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  background: rgba(182, 177, 177, 0.5);
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+
+.show-modal {
+  visibility: visible;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.modal-inner {
+  position: relative;
+  opacity: 1;
+  background: #fff;
+  width: 90%;
+  height: auto;
+  margin: 3rem auto;
+  padding: 2rem 0.5rem;
+  border-radius: 1.6rem;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: #172b4d;
+  font-size: 32px;
+  margin-bottom: 1rem;
+  font-family: "poppins", sans-serif;
+}
+
+.modal-text {
+  display: grid;
+  color: #344563;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 9px;
+  bottom: 90px;
+  right: 32px;
+}
+
+.modal-head {
+  display: flex;
+  align-items: center;
+}
+
+.mr a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.source-btn {
+  width: 146px;
+  height: 40px;
+  border: 1px solid #7f8cff;
+  padding: 8px;
+  color: #396df2;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+.white {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,18 +209,25 @@ body {
   background-color: #fff;
 }
 
-.social-media {
+.icons-media {
   padding-bottom: 100px;
 }
 
-.social-media li {
+.icons-media li {
   display: inline-block;
   margin-right: 20px;
   margin-top: 25px;
   margin-left: 0%;
 }
 
-.social-media li a {
+.anchor-div a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #4472e7;
+  font-size: small;
+}
+
+.icons-media li a {
   cursor: pointer;
   text-decoration: none;
 }
@@ -102,7 +257,7 @@ body {
   border-bottom-left-radius: 110px;
 }
 
-.work {
+.work-section {
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -170,15 +325,34 @@ body {
   margin-right: 12px;
 }
 
+.option-modal {
+  font-family: poppins, sans-serif;
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  padding-top: 8px;
+  margin-right: 12px;
+}
+
 .canopy {
   font-family: poppins, sans-serif;
   color: #344563;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  position: static;
-  width: 55px;
   height: 16px;
+  padding-left: 0;
+  padding-top: 8px;
+  margin-right: 12px;
+}
+
+.canopy-modal {
+  font-family: poppins, sans-serif;
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
   padding-left: 0;
   padding-top: 8px;
   margin-right: 12px;
@@ -210,7 +384,6 @@ button {
   margin-top: 40px;
   margin-bottom: 30px;
   align-self: start;
-  transition: all 0.5s ease-out;
 }
 
 .getmyr {
@@ -394,6 +567,13 @@ a .btn-two {
   font-family: Poppins, sans-serif;
 }
 
+.error-message {
+  color: red !important;
+  margin-top: 0.2rem;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 .con-but {
   justify-content: start;
   width: 140px;
@@ -405,12 +585,22 @@ a .btn-two {
   font-size: 17px;
   font-weight: 500;
   color: #4472e7;
-  transition: all 0.5s ease-out;
 }
 
 .skills-section {
   position: relative;
   bottom: 30%;
+}
+
+.technologies-langu li {
+  background-color: #ebebff;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: poppins, sans-serif;
+  justify-content: space-between;
+  margin-right: 20px;
+  display: inline-block;
 }
 
 .menu-desktop {
@@ -431,6 +621,10 @@ a .btn-two {
 }
 
 @media (min-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+
   .lang {
     padding-top: 40px;
   }
@@ -548,6 +742,108 @@ a .btn-two {
 }
 
 @media (min-width: 1000px) {
+  .modal-inner {
+    width: 80%;
+    height: 94%;
+    background: #fff;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1.6rem;
+  }
+
+  .modal-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-img {
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .bullets {
+    margin-right: 3px;
+  }
+
+  .modal-title {
+    margin-bottom: 1rem;
+    color: #172b4b;
+    font-size: 20px;
+  }
+
+  .modal-head {
+    display: flex;
+    align-items: center;
+    height: 10px;
+    margin-top: 14px;
+  }
+
+  .modal-text {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    color: #344563;
+    font-family: "poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .card-detail-header-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+
+  .cancels {
+    position: absolute;
+    top: 2rem;
+    font-size: 30px;
+    right: 12%;
+    z-index: 8;
+  }
+
+  .technologies-langu li {
+    background-color: #ebebff;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-family: poppins, sans-serif;
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 20px;
+    bottom: 105px;
+    left: 445px;
+  }
+
+  .canopy-js {
+    font-family: poppins, sans-serif;
+    color: #344563;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 16px;
+    margin-right: 10px;
+  }
+
+  .choice-javas {
+    font-family: poppins, sans-serif;
+    color: #7a869a;
+    font-weight: 100;
+    font-size: 8px;
+    line-height: 16px;
+    padding-top: 20px;
+    margin-right: 12px;
+    display: flex;
+  }
+
+  .option-modal {
+    color: #7a869a;
+    font-size: 12px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
   .work-section {
     width: auto;
     height: min-content;
@@ -639,8 +935,6 @@ a .btn-two {
     line-height: 24px;
     position: static;
     margin-bottom: 5px;
-    width: 75px;
-    height: 16px;
     padding-left: 0;
     padding-top: 8px;
     margin-right: 12px;
@@ -659,6 +953,22 @@ a .btn-two {
     position: static;
     padding-top: 8px;
     margin-right: 12px;
+    height: 32px;
+  }
+
+  .anchor-div li {
+    margin-top: 15px;
+  }
+
+  .anchor-div a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #4472e7;
+    font-size: 10px;
+  }
+
+  .popup-description {
+    margin-top: 15px;
   }
 
   .option {
@@ -707,6 +1017,7 @@ a .btn-two {
     display: flex;
     align-items: center;
     margin: 10px 0;
+    margin-top: 1px;
   }
 
   .dcanopy2_facebook {
@@ -748,5 +1059,39 @@ a .btn-two {
 
   .instruction {
     display: none;
+  }
+
+  button:hover {
+    transition: background, 1s, ease-in, 0s;
+  }
+
+  .featured img {
+    transition: all 1s ease-in-out;
+  }
+
+  .featured img:hover {
+    transform: scale(1.05);
+  }
+
+  .desktop-card-works:hover {
+    transform: scale(1.1);
+  }
+
+  .contact-form h2:hover {
+    transform: translate(10px);
+  }
+
+  @keyframes myrotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+
+  .my-logo {
+    animation: myrotate 5s;
   }
 }
