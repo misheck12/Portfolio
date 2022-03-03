@@ -178,7 +178,6 @@ function showWorks() {
 
   for (let k = 0; k < works.length; k++) {
     let work = works[k]
-    console.log(k);
     let template = document.createElement('template')
 
     if (k % 2 == 0) {
