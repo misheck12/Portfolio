@@ -4,8 +4,6 @@ const cancel = document.querySelector('.cancel');
 const anchorLink = document.querySelectorAll('.anchor-link');
 const Body = document.querySelector('body');
 
-
-
 const cancelModal = document.querySelector('.cancels');
 const modal = document.querySelector('.modal');
 const modalInner = document.querySelector('.modal-inner');
@@ -63,11 +61,11 @@ const cards = [
 ];
 
 function grab(e) {
-  return document.getElementById(e)
+  return document.getElementById(e);
 }
 
 const Openpopup = ({
-  name, description, featuredImage, desktopImage, technologies, linktoliveversion, linktosource, option, optionMobile
+  name, description, featuredImage, desktopImage, technologies, linktoliveversion, linktosource, option, optionMobile,
 }) => () => {
   let displayModal = '';
   modal.classList.add('show-modal');
@@ -114,14 +112,14 @@ const Openpopup = ({
 };
 
 function showWorks() {
-  let works = [
+  const works = [
     {
-      title: "Tonic",
-      options: ["CANOPY", "Back End Dev", "2015"],
-      imgMobile: "images/photo1.png",
-      imgDesktop: "images/photo1dt.png",
-      description: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
-      descriptionD: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      title: 'Tonic',
+      options: ['CANOPY', 'Back End Dev', '2015'],
+      imgMobile: 'images/photo1.png',
+      imgDesktop: 'images/photo1dt.png',
+      description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       languages: ` <li class="langu langu-a">html</li>
       <li class="langu langu-b">css</li>
       <li class="langu langu-c">javascript</li>
@@ -130,59 +128,58 @@ function showWorks() {
       <li class="langu2">javascript</li>`,
     },
     {
-      title: "Multi-post Stories",
-      options: ["FACEBOOK", "Back End Dev", "2015"],
-      imgMobile: "images/photo2.png",
-      imgDesktop: "images/photo2dt.png",
-      description: "Experimental content creation features that allows users to add and existing story over the course of the day without spamming their friends.",
-      descriptionD: "A daily selection of privately personalized reads; no accounts or sign-ups required. ",
+      title: 'Multi-post Stories',
+      options: ['FACEBOOK', 'Back End Dev', '2015'],
+      imgMobile: 'images/photo2.png',
+      imgDesktop: 'images/photo2dt.png',
+      description: 'Experimental content creation features that allows users to add and existing story over the course of the day without spamming their friends.',
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
       languages: `<li class="langu">html</li>
       <li class="langu">css</li>
       <li class="langu">javascript</li>
       <li class="langu2">html</li>
       <li class="langu2">Ruby on rails</li>
       <li class="langu2">css</li>
-      <li class="langu2">javascript</li>`
+      <li class="langu2">javascript</li>`,
     },
     {
-      title: "Facebook 360",
-      options: ["FACEBOOK", "Full Stack Dev", "2015"],
-      imgMobile: "images/photo3.png",
-      imgDesktop: "images/photo3dt.png",
+      title: 'Facebook 360',
+      options: ['FACEBOOK', 'Full Stack Dev', '2015'],
+      imgMobile: 'images/photo3.png',
+      imgDesktop: 'images/photo3dt.png',
       description: "Exploring the future of media in Facebook's first Virtual Reality place to discover and enjoy 360 photos and videos on Gear VR .",
-      descriptionD: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       languages: `<li class="langu">html</li>
       <li class="langu">css</li>
       <li class="langu">javascript</li>
       <li class="langu2">html</li>
       <li class="langu2">Ruby on rails</li>
       <li class="langu2">css</li>
-      <li class="langu2">javascript</li>`
+      <li class="langu2">javascript</li>`,
     },
     {
-      title: "Uber Navigation",
-      options: ["Uber", "Lead Developer", "2018"],
-      imgMobile: "images/photo4.png",
-      imgDesktop: "images/photo4dt.png",
-      description: "A smart assistant to make driving mode safe, efficient, and fun by unlocking your most expensive computer: your car.",
-      descriptionD: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+      title: 'Uber Navigation',
+      options: ['Uber', 'Lead Developer', '2018'],
+      imgMobile: 'images/photo4.png',
+      imgDesktop: 'images/photo4dt.png',
+      description: 'A smart assistant to make driving mode safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      descriptionD: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
       languages: `<li class="langu">html</li>
       <li class="langu">css</li>
       <li class="langu">javascript</li>
       <li class="langu2">html</li>
       <li class="langu2">Ruby on rails</li>
       <li class="langu2">css</li>
-      <li class="langu2">javascript</li>`
+      <li class="langu2">javascript</li>`,
     },
-  ]
+  ];
 
   for (let k = 0; k < works.length; k++) {
-    let work = works[k]
-    let template = document.createElement('template')
+    const work = works[k];
+    const template = document.createElement('template');
 
     if (k % 2 == 0) {
-
-    template.innerHTML = `<div class="project-card desktop">
+      template.innerHTML = `<div class="project-card desktop">
         <div class="mobile-image">
           <img src="${work.imgMobile}" alt="First Card">
         </div>
@@ -215,9 +212,7 @@ function showWorks() {
           <button type="button" class="btn-one btns">See project</button>
         </div>
       </div>
-    `.trim()
-
-      
+    `.trim();
     } else {
       template.innerHTML = `<div class="project-card card-flex">
       <div class="mobile-image">
@@ -252,25 +247,23 @@ function showWorks() {
         <button type="button" class="btn-one btns">See project</button>
       </div>
     </div>
-  `.trim()    
+  `.trim();
     }
-    let child = template.content.firstChild
-    grab('work').appendChild(child)
+    const child = template.content.firstChild;
+    grab('work').appendChild(child);
   }
 }
-
 
 function closePopup() {
   modal.classList.remove('show-modal');
 }
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const modalButton = document.querySelectorAll('.btns');
   modalButton.forEach((button, i) => {
     button.addEventListener('click', Openpopup(cards[i]));
   });
 });
-
 
 Bar.addEventListener('click', openSideBar);
 cancel.addEventListener('click', closeSideBar);
@@ -295,7 +288,7 @@ window.onload = showWorks();
 const formContainer = document.querySelector('.con-form');
 const mailInput = document.getElementById('mail');
 const messageError = document.querySelector('.error-message');
- 
+
 formContainer.addEventListener('submit', (e) => {
   if (mailInput.value === mailInput.value.toLowerCase()) {
     messageError.textContent = '';
@@ -304,5 +297,3 @@ formContainer.addEventListener('submit', (e) => {
     messageError.innerHTML = '*Write your email in lower case <br> * form invalid';
   }
 });
-
-
