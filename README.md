@@ -5,6 +5,7 @@
 > This project was designed using HTML and CSS which is used for styling or decorating the webpage. Javascript for pop up functions and side mobile menu
 
 # DESKTOP VERSION
+
 ![screenshot](./images/Desktop.png)
 
 Additional description about the project and its features.
@@ -17,6 +18,7 @@ In this project I added an about me then lastly I added a contact me form.
 -Javascript
 
 **Instructions on how to access my project locally.**
+
  To Access my project locally please follow the following instructions;
 1. Enter this url: https://misheck12.github.io/Portfolio/ in your web browser.
 2. Once opened navigate to the top left level of the project a green code download button will be visible on the righthand side.
@@ -55,5 +57,5 @@ This project is [MIT](./MIT.md) licensed.
 
 ## contributors
 
-https://github.com/DanUshindi
-https://github.com/aliatayee
+- Dan Ushindi https://github.com/DanUshindi
+- Ali Aqa Atayee https://github.com/aliatayee
