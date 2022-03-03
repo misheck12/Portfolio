@@ -236,7 +236,7 @@ body.noscroll {
   cursor: pointer;
 }
 
-.nav-bar {
+.navmenu {
   color: #7f8cff;
 }
 
@@ -711,7 +711,7 @@ a .btn-two {
     padding-top: 0;
   }
 
-  .nav-bar {
+  .navmenu {
     visibility: hidden;
   }
 
