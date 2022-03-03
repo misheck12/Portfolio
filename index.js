@@ -65,7 +65,8 @@ function grab(e) {
 }
 
 const Openpopup = ({
-  name, description, featuredImage, desktopImage, technologies, linktoliveversion, linktosource, option, optionMobile,
+  name, description, featuredImage, desktopImage,
+  technologies, linktoliveversion, linktosource, option, optionMobile,
 }) => () => {
   let displayModal = '';
   modal.classList.add('show-modal');
@@ -174,11 +175,11 @@ function showWorks() {
     },
   ];
 
-  for (let k = 0; k < works.length; k++) {
+  for (let k = 0; k < works.length; k += 1) {
     const work = works[k];
     const template = document.createElement('template');
 
-    if (k % 2 == 0) {
+    if (k % 2 === 0) {
       template.innerHTML = `<div class="project-card desktop">
         <div class="mobile-image">
           <img src="${work.imgMobile}" alt="First Card">
@@ -265,14 +266,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-Bar.addEventListener('click', openSideBar);
-cancel.addEventListener('click', closeSideBar);
-cancelModal.addEventListener('click', closePopup);
-
-anchorLink.forEach((anchor) => {
-  anchor.addEventListener('click', closeSideBar);
-});
-
 function openSideBar() {
   sideBar.classList.add('show-side-bar');
   Body.classList.add('noscroll');
@@ -282,6 +275,14 @@ function closeSideBar() {
   sideBar.classList.remove('show-side-bar');
   Body.classList.remove('noscroll');
 }
+
+Bar.addEventListener('click', openSideBar);
+cancel.addEventListener('click', closeSideBar);
+cancelModal.addEventListener('click', closePopup);
+
+anchorLink.forEach((anchor) => {
+  anchor.addEventListener('click', closeSideBar);
+});
 
 window.onload = showWorks();
 
