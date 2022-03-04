@@ -304,3 +304,9 @@ formContainer.addEventListener('submit', (e) => {
     messageError.innerHTML = '*Write your email in lower case <br> * form invalid';
   }
 });
+if (formContainer) {
+  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  document.getElementById('name').value = name;
+  document.getElementById('mail').value = email;
+  document.getElementById('message').value = message;
+}
