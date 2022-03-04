@@ -293,8 +293,20 @@ const messageError = document.querySelector('.error-message');
 formContainer.addEventListener('submit', (e) => {
   if (mailInput.value === mailInput.value.toLowerCase()) {
     messageError.textContent = '';
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('mail').value,
+      message: document.getElementById('message').value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
   } else {
     e.preventDefault();
     messageError.innerHTML = '*Write your email in lower case <br> * form invalid';
   }
 });
+if (formContainer) {
+  const { name, email, message } = JSON.parse(localStorage.getItem('formData'));
+  document.getElementById('name').value = name;
+  document.getElementById('mail').value = email;
+  document.getElementById('message').value = message;
+}
