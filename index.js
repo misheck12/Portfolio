@@ -293,6 +293,12 @@ const messageError = document.querySelector('.error-message');
 formContainer.addEventListener('submit', (e) => {
   if (mailInput.value === mailInput.value.toLowerCase()) {
     messageError.textContent = '';
+    const formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('mail').value,
+      message: document.getElementById('message').value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
   } else {
     e.preventDefault();
     messageError.innerHTML = '*Write your email in lower case <br> * form invalid';
