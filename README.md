@@ -29,6 +29,10 @@ In this project I added an about me then lastly I added a contact me form.
 
 Here is my repository link: https://Misheck12.github.io/Portfolio/
 
+## Functionalities
+
+-Form Validation
+-Popup Window
 
 ## Authors
 
@@ -57,5 +61,5 @@ This project is [MIT](./MIT.md) licensed.
 
 ## contributors
 
-- Dan Ushindi https://github.com/DanUshindi
-- Ali Aqa Atayee https://github.com/aliatayee
+- Dan Ushindi   https://github.com/DanUshindi
+- Ali Aqa Atayee  https://github.com/aliatayee
