@@ -1,12 +1,20 @@
-function menuFunction() {
-    const links = document.getElementById('mobile-menu-container');
-    if (links.style.display === 'block') {
-    links.style.display = 'none';
-    } else {
-    links.style.display = 'block';
+let navMenu = document.querySelector(".navbar"); 
+let navIcon = document.querySelector(".fa-bars"); 
+let navLink = document.querySelectorAll(".nav-items li a");
 
+function displayMenu() { 
+  navMenu.classList.toggle("menu-active"); 
+  navIcon.classList.add("is-active");
+} 
+
+function closeMenu() {
+  navMenu.classList.toggle("menu-active");
+  navIcon.classList.remove("is-active");
 }
 
-}
-
-document.querySelector('.active-close').addEventListener('click', menuFunction);
+[].forEach.call(navLink, function (link) {
+  link.onclick = () => {
+    navMenu.classList.toggle("menu-active");
+    navIcon.classList.toggle("is-active");
+  };
+});
