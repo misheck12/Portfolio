@@ -388,6 +388,10 @@ button {
 
 .getmyr {
   padding-bottom: 0;
+  display: flex;
+  list-style: none;
+  margin: 12px -2px;
+  gap: 20px;
 }
 
 .btn-resume {
@@ -739,6 +743,8 @@ a .btn-two {
     width: 140px;
     height: 48px;
   }
+
+
 }
 
 @media (min-width: 1000px) {
